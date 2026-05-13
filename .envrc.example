@@ -1,0 +1,15 @@
+# Rename to .envrc
+# I suggest installing `direnv` and adding a hook
+export IMAGE="avarok/dgx-vllm-nvfp4-kernel"
+export VLLM_ADDR="0.0.0.0"
+export VLLM_PORT=8000
+export VLLM_CACHE_DIR=${HOME}/.cache
+export WD="./workspace"
+export HF_TOKEN="[your huggingface token]"
+export HF_MODEL_NAME="RedHatAI/Qwen3-Coder-Next-NVFP4"
+export SERVED_MODEL_NAME="qwen3-coder-next"
+export TOOL_CALL_PARSER="qwen3_coder"
+export MAX_NUM_BATCHED_TOKENS=$((2 ** 14))
+export GPU_MEM_UTIL=0.9
+export MAX_NUM_SEQS=4
+export CONTEXT_LEN=$((2 ** 17))
